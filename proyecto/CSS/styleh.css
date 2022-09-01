@@ -1,0 +1,160 @@
+@font-face{
+    font-family: "strenuous bl";
+    src: url(../media/strenuous\ bl.ttf)
+}   
+body{
+    background-image: url(../media/fondo\ egipto.png)
+}
+.padre{
+    background-color: lightblue;
+
+}
+.hijo{
+    background-color: lightskyblue;
+    border: solid 1px blue;
+
+}
+section {
+    background-image: url(../media/borde\ dorado.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;   
+}
+#productos div { 
+    padding: 5px;      
+}
+ 
+header{
+    grid-area: header;
+    background-image: url(../media/pngegg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain ;    
+}  
+
+header:hover{
+    height:110% ;
+    width: 110%;
+}
+
+footer{
+    grid-area: footer;
+    background-image: url(../media/logo\ gru.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 30px;
+    height: 35px;
+    
+}
+
+section #productos{
+    grid-area: productos;
+    border: solid 1px;
+       
+}
+
+nav{
+    grid-area: nav;
+    background-size: contain;
+    height: 500px;
+}
+ul{
+    z-index: 1;
+    font-family: "strenuous bl";
+    font-size: 20px; 
+    background-image: url(../media/borde\ papiro.png); 
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    list-style-type: none;
+    height: 410px;
+    width:170px ;
+    line-height: 50px;   
+}
+aside{
+    grid-area: publicidad;
+    background-image: url(../media/minions\ escribiendo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 500px;
+}
+aside{
+    
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 4s;   
+}
+@keyframes un_efecto{
+    0%{
+        height: 100%;
+    }
+    10%{
+        height: 95%;
+    }
+    25%{
+        height: 90%;
+    }
+    35%{
+        height: 85%;
+    }
+    50%{
+        height: 80%;
+    }
+    75%{
+        height: 50%;
+    }
+    85%{
+        height: 75%;
+    }
+    100%{
+        height: 100%; ;
+    }
+
+}
+
+#grilla {
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 150px 500px 75px;
+    grid-template-areas: "header header header" "nav productos publicidad" "nav producto publicidad" "footer footer footer"; 
+    column-gap: 10px;
+    row-gap: 5px;
+}
+#productos{
+    display: grid;
+    grid-template-columns: 95% ;
+    grid-template-rows:50px 90px 330px ;
+    row-gap: 5px;  
+    
+ } 
+#productos .itemUno{
+    font-family: "strenuous bl";
+    font-size: 25px;
+    text-align: center;   
+}
+h3{
+    text-align: center end;
+
+}
+#productos .itemDos{
+    font-family: "strenuous bl";
+    font-size: medium;
+}
+p{ 
+    text-align: right;
+}
+
+#productos .itemTres{
+    text-align: right   
+   
+}
+
+     
+
+
+
+
+

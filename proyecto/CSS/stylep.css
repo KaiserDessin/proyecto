@@ -1,0 +1,153 @@
+body{
+    background-image: url('../media/fondo\ rayos.png');
+}
+.padre{
+    background-color: lightblue;
+
+}
+.hijo{
+    background-color: lightskyblue;
+    border: solid 1px blue;
+
+}
+
+
+#productos div,
+#servicios div {
+    border: solid 1px ;
+    border-radius: 16px;
+    padding: 5px ;
+    background-image: url();
+}
+.border{
+    border: solid 1px black;
+} 
+
+.padre{
+    display: grid;
+    grid-template-columns: 300px 100px 170px;
+    grid-template-rows: 40px 100px;
+    }
+/* grids*/
+
+header{
+    grid-area: header;
+    background-image: url(../media/pngegg2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:contain ;
+}  
+footer{
+    grid-area: footer;
+    background: url(../media/logo\ gru.png);
+    background-position:left ;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    
+
+
+}
+section #productos{
+    grid-area: productos;
+    
+}
+
+nav{
+    grid-area: nav;
+    background-image: url(../media/minions\ x\ 3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+aside{
+    grid-area: publicidad;
+    background-image: url(../media/minions\ apilados.png);
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: 110% 100%
+    
+
+}
+#grilla {
+    display: grid;
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr  75px;
+    grid-template-areas: "nav header header" "nav productos publicidad"  "footer footer footer"; 
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    
+
+}
+
+#productos {
+    height: 800px; 
+       
+}
+
+#productos .itemUno{
+    background-image: url(../media/funko\ bebe.jpg);
+    justify-content: stretch;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    
+}
+#productos .itemDos{
+    background-image: url(../media/funko.jpg);
+    justify-content: stretch;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#productos .itemTres{
+    background-image: url(../media/funko\ pop.jpeg);
+    justify-content: stretch;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#productos .itemCuatro{
+    background-image: url(../media/llavero.jpeg);
+    justify-content: stretch;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#productos .itemCinco{
+    background-image: url(../media/jabonera.jpg);
+    justify-content: stretch;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#productos .itemSeis{
+    background-image: url(../media/paraguas.jpg);
+    justify-content: stretch;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#productos .itemSiete{
+    background-image: url(../media/peluche.jpg);
+    justify-content: stretch;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#productos .itemOcho{
+    background-image: url(../media/funko\ orejeras.jpg);
+    justify-content: stretch;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+        
