@@ -1,0 +1,33 @@
+@font-face{
+    font-family: "strenuous bl";
+    src: url('../media/strenuous\ bl.ttf');
+}
+
+*{
+    margin: o;
+    padding: 0;
+}
+body{
+    background-image: url(../media/rayas\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+header{
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "strenuous bl";
+    list-style-type: none; 
+    
+
+}
+section{
+
+}
+footer{
+
+}
