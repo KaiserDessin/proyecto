@@ -8,9 +8,7 @@
     padding: 0;
 }
 body{
-    background-image: url(../media/minion\ patin.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100% ;
+   
 }
 
 .border{
@@ -18,49 +16,41 @@ body{
 } 
 header{
     grid-area: header;
-    height: 100px;
-    background-image: url(../media/pngegg2.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 400px;height: 80px;
-
 }
 nav{
     grid-area: nav;
-    height: 100px;     
+           
 }
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    
-}
-nav ul li{
+nav ul li a{
     font-family: "strenuous bl";
-    list-style-type: none;
-    
+    list-style-type: none;    
 }
-#dropdown{
-    text-align: center;
-    
-    
-}
-
 section{
     grid-area: section;
-    height: 550px;
+    height: 650px;
+    background-image: url(../media/minion\ patin.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ; 
+
+}aside{
+    grid-area: aside;
+    margin: 50px;   
 }
 
 footer{
     grid-area: footer;
-    height: 20px;
+    height: 50px;
+    text-align: right ;
+    margin: 45px;
+    
 }
+
 #grid{
     display: grid;
     grid-template-columns: 30% auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header nav" "section section" "footer footer";
+    grid-template-rows: auto auto auto auto;
+    row-gap: 80px;
+    grid-template-areas: "header nav" "section section" "aside aside" "footer footer";
 
 
 
