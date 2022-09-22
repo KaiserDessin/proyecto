@@ -30,24 +30,22 @@ header{
 section{
     display: flex;
     grid-area: section;
-    height: 1000px; 
+    height: 500px; 
     justify-content: center;
-    align-items: center;
-   
-       
+    align-items: center;      
 }
-#video {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    column-gap: 2px; 
-    row-gap: 1px;   
-}
-#videoUno{
-    background-image: url(../media/fondo\ pelicula.png);
-    background-repeat: no-repeat;  
+#carousel{
+    justify-content: stretch;
     
+    
+
 }
+article{
+    grid-area: article;
+    height: 500px;
+}
+
+
 
 
 nav{
@@ -70,22 +68,15 @@ nav ul li{
 
 aside{
     grid-area: aside;
-    height: 1000px;   
-    display: flex;
+    height: 1000px; 
+    
     background-image: url(../media/minions\ apilados.png);
     background-size: 100% 100%;
      
 
 
 }
-#menu{
-    display: flex;
-    font-family: "strenuous bl" ;
-    flex-direction: column;
-    align-content: center;
-    text-decoration: none;
-    
-}
+
 
 footer{
     display: flex;
@@ -101,8 +92,8 @@ footer{
 #grid {
     display: grid;
     grid-template-columns: 15% auto;
-    grid-template-rows: 100px 50px auto 75px;
-    grid-template-areas: "header header " "nav nav " "aside section"  "footer footer"; 
+    grid-template-rows: 100px 50px auto auto 75px;
+    grid-template-areas: "header header " "nav nav " "aside section" "aside article" "footer footer"; 
     column-gap: 10px;
     row-gap: 10px;
 }
